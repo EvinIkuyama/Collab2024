@@ -1,11 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "GradingSystem.h"
-#include <string>
+#include "GradeSystem.h"
 
 // Sets default values for this component's properties
-UGradingSystem::UGradingSystem()
+UGradeSystem::UGradeSystem()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
@@ -16,7 +15,7 @@ UGradingSystem::UGradingSystem()
 
 
 // Called when the game starts
-void UGradingSystem::BeginPlay()
+void UGradeSystem::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -26,18 +25,18 @@ void UGradingSystem::BeginPlay()
 
 
 // Called every frame
-void UGradingSystem::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UGradeSystem::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
 }
 
-void UGradingSystem::PlayerGrade(FString& endText)
+void UGradeSystem::PlayerGrade(FString& endText)
 {
 	//insert the check values when needed, check the values and equivalate a percentage
 	FString tempText;
-	float percentageAverage;
+	float percentageAverage = 0.5f;
 
 	if (percentageAverage >= 1.0f)
 	{

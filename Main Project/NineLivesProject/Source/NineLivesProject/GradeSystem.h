@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "GradingSystem.generated.h"
+#include "GradeSystem.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class NINELIVESPROJECT_API UGradingSystem : public UActorComponent
+class NINELIVESPROJECT_API UGradeSystem : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UGradingSystem();
+	UGradeSystem();
 
 protected:
 	// Called when the game starts
