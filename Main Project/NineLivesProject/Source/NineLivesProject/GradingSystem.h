@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "Test.generated.h"
+#include "GradingSystem.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class NINELIVESPROJECT_API UTest : public UActorComponent
+class NINELIVESPROJECT_API UGradingSystem : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UTest();
+	UGradingSystem();
 
 protected:
 	// Called when the game starts
@@ -24,5 +24,9 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-		
+	UFUNCTION(BlueprintCallable, Category = "WinClass")
+		void PlayerGrade(FString& endText);
+
+	UPROPERTY(EditAnywhere, Category = "WinClass")
+		float gradeRanges[6];
 };
