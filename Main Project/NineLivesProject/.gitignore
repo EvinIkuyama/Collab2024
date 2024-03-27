@@ -1,14 +1,5 @@
 # Visual Studio 2015 user specific files
 .vs/
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.VC.db
-*.opendb
-.vscode
-**/.history
 
 # Compiled Object files
 *.slo
