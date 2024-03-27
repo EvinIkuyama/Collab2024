@@ -14,16 +14,20 @@ class NINELIVESPROJECT_API ULevelSpeedSave : public USaveGame
 {
 	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, Category = "TimeSave")
-		LevelData levelSaves[];
+	//UPROPERTY(EditAnywhere, Category = "TimeSave")
+		ULevelData levelSaves[3];
 
 	UFUNCTION(BlueprintCallable, Category = "TimeSave")
 		void CallLevelData(int levelNumber,int& levelRetries ,int& levelSeconds);
 };
 
-class LevelData
+UCLASS(BlueprintType)
+class ULevelData
 {
-public:
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, Category = "DataSave")
 	int retries;
+	UPROPERTY(EditAnywhere, Category = "DataSave")
 	int seconds;
 };
