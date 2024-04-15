@@ -5,6 +5,6 @@
 
 void ULevelSpeedSave::CallLevelData(int levelNumber, int& levelRetries, int& levelSeconds)
 {
-	levelRetries = levelSaves[levelNumber].retries;
-	levelSeconds = levelSaves[levelNumber].seconds;
+	levelRetries = levelSaveRetries[levelNumber];
+	levelSeconds = levelSaveSeconds[levelNumber];
 }
