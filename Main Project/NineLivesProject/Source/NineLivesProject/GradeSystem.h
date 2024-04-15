@@ -25,8 +25,8 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	UFUNCTION(BlueprintCallable, Category = "WinClass")
-		void PlayerGrade(FString& endText);
+		void PlayerGrade(int seconds, FString& endText);
 
 	UPROPERTY(EditAnywhere, Category = "WinClass")
-		float gradeRanges[6];
+		float gradeRanges[3];
 };
