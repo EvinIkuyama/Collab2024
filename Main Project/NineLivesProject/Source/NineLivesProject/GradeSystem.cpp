@@ -36,21 +36,21 @@ void UGradeSystem::PlayerGrade(int seconds, FString& endText)
 {
 	//insert the check values when needed, check the values and equivalate a percentage
 	FString tempText;
-	float tempSeconds = 0.5f;
+	int tempSeconds = 30;
 
-	if (tempSeconds >= gradeRanges[0])
+	if (tempSeconds <= gradeRanges[0])
 	{
 		tempText = "3 STAR";
 	}
-	else if (tempSeconds >= gradeRanges[1])
+	else if (tempSeconds <= gradeRanges[1])
 	{
 		tempText = "2 STAR";
 	}
-	else if (tempSeconds >= gradeRanges[2])
+	else if (tempSeconds <= gradeRanges[2])
 	{
 		tempText = "1 STAR";
 	}
-	else if (tempSeconds >= gradeRanges[3])
+	else if (tempSeconds <= gradeRanges[3])
 	{
 		tempText = "0 STAR";
 	}

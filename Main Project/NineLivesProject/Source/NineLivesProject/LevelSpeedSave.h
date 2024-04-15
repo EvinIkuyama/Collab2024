@@ -20,6 +20,9 @@ class NINELIVESPROJECT_API ULevelSpeedSave : public USaveGame
 	UPROPERTY(EditAnywhere, Category = "TimeSave")
 		int levelSaveSeconds[3];
 
+	UPROPERTY(EditAnywhere, Category = "TimeSave")
+		int levelSaveStars[3];
+
 	UFUNCTION(BlueprintCallable, Category = "TimeSave")
-		void CallLevelData(int levelNumber,int& levelRetries ,int& levelSeconds);
+		void CallLevelData(int levelNumber,int& levelRetries ,int& levelSeconds, int& levelStars);
 };

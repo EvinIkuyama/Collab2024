@@ -3,8 +3,9 @@
 
 #include "LevelSpeedSave.h"
 
-void ULevelSpeedSave::CallLevelData(int levelNumber, int& levelRetries, int& levelSeconds)
+void ULevelSpeedSave::CallLevelData(int levelNumber, int& levelRetries, int& levelSeconds, int& levelStars)
 {
 	levelRetries = levelSaveRetries[levelNumber];
 	levelSeconds = levelSaveSeconds[levelNumber];
+	levelStars = levelSaveSeconds[levelNumber];
 }
