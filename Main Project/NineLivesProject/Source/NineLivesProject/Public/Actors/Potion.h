@@ -9,11 +9,12 @@
 #include "Potion.generated.h"
 
 UENUM(BlueprintType)
-enum class EElement : uint8
+enum class Enum_ActiveElement : uint8
 {
-	Fire,
 	Wind,
+	Fire,
 	Water,
+	Earth,
 };
 
 UCLASS()
@@ -32,7 +33,7 @@ public:
 	TObjectPtr<UStaticMeshComponent> Mesh;
 
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
-	EElement Type;
+	Enum_ActiveElement Type;
 
 	UFUNCTION()
 	virtual void PickedUp_Implementation(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool
