@@ -25,4 +25,7 @@ class NINELIVESPROJECT_API UGameInstanceSave : public UGameInstance
 
 	UFUNCTION(BlueprintCallable, Category = "TimeSave")
 		void CallLevelData(int levelNumber, int& levelRetries, int& levelSeconds, int& levelStars);
+
+	UFUNCTION(BlueprintCallable, Category = "TimeSave")
+		void SaveLevelData(int levelNumber, int levelRetries, int levelSeconds, int levelStars);
 };
