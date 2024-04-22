@@ -35,7 +35,7 @@ public:
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	Enum_ActiveElement Type;
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable)
 	virtual void PickedUp_Implementation(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool
 	                                     bFromSweep, const FHitResult& SweepResult);
 protected:
