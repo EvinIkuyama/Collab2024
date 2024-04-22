@@ -11,8 +11,8 @@
 UENUM(BlueprintType)
 enum class Enum_ActiveElement : uint8
 {
-	Wind,
 	Fire,
+	Wind,
 	Water,
 	Earth,
 };
