@@ -25,7 +25,7 @@ void AEndLevelBox::ChangeLevel(UPrimitiveComponent* OverlappedComponent, AActor*
 	
 	if(OtherActor->GetClass()->IsChildOf(AMainCharacter::StaticClass()))
 	{
-		//UGameplayStatics::OpenLevel(GetWorld(),LevelToGo);
+		UGameplayStatics::OpenLevel(GetWorld(),LevelToGo);
 	}
 
 }

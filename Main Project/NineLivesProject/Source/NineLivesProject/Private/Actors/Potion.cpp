@@ -29,5 +29,6 @@ void APotion::PickedUp_Implementation(UPrimitiveComponent* OverlappedComponent, 
 	{
 		GEngine->AddOnScreenDebugMessage(1,5.0f,FColor::Red,TEXT("PICKEDUP"));
 		inv->AddToInventory(this);
+		Destroy();
 	}
 }

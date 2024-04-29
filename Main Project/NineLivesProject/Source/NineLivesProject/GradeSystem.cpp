@@ -32,25 +32,25 @@ void UGradeSystem::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 	// ...
 }
 
-FString UGradeSystem::PlayerGrade(int seconds, FString& endText)
+void UGradeSystem::PlayerGrade(int seconds, FString& endText)
 {
 	//insert the check values when needed, check the values and equivalate a percentage
 	FString tempText;
-	int tempSeconds = seconds;
+	int tempSeconds = 30;
 
-	if (tempSeconds < gradeRanges[0])
+	if (tempSeconds <= gradeRanges[0])
 	{
 		tempText = "3 STAR";
 	}
-	else if (tempSeconds < gradeRanges[1])
+	else if (tempSeconds <= gradeRanges[1])
 	{
 		tempText = "2 STAR";
 	}
-	else if (tempSeconds < gradeRanges[2])
+	else if (tempSeconds <= gradeRanges[2])
 	{
 		tempText = "1 STAR";
 	}
-	else if (tempSeconds < gradeRanges[3])
+	else if (tempSeconds <= gradeRanges[3])
 	{
 		tempText = "0 STAR";
 	}
@@ -58,6 +58,4 @@ FString UGradeSystem::PlayerGrade(int seconds, FString& endText)
 	{
 		tempText = "Invalid Score";
 	}
-
-	return tempText;
 }

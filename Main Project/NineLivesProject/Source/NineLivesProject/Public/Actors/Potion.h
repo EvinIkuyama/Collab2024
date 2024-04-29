@@ -11,8 +11,8 @@
 UENUM(BlueprintType)
 enum class Enum_ActiveElement : uint8
 {
-	Fire,
 	Wind,
+	Fire,
 	Water,
 	Earth,
 };
@@ -35,7 +35,7 @@ public:
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	Enum_ActiveElement Type;
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION()
 	virtual void PickedUp_Implementation(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool
 	                                     bFromSweep, const FHitResult& SweepResult);
 protected:
