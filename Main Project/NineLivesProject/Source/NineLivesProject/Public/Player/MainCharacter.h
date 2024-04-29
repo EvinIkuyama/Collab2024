@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
 
@@ -18,6 +19,18 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TObjectPtr<UCameraComponent> playerCamera;
+
+	UFUNCTION(BlueprintCallable)
+	void JumpOffWall(bool isWallRunning);
+	
+	float wallJumpFactor = 750.0f;
+	float launchPower;
+	
+	FVector WallJumpingVector;
+	FVector CameraForwardVector;
 
 public:
 	// Called every frame
