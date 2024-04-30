@@ -17,7 +17,7 @@ public:
 
 	AEndLevelBox();
 	
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 	TObjectPtr<UBoxComponent> Box;
 	
 	UPROPERTY(BlueprintReadWrite,EditAnywhere)
