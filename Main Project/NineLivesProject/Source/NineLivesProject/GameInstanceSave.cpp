@@ -15,8 +15,4 @@ void UGameInstanceSave::SaveLevelData(int levelNumber, int levelRetries, int lev
 	levelSaveRetries[levelNumber] = levelRetries;
 	levelSaveSeconds[levelNumber] = levelSeconds;
 	levelSaveSeconds[levelNumber] = levelStars;
-
-	return levelRetries;
-	return levelSeconds;
-	return levelStars;
 }
