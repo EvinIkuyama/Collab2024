@@ -50,13 +50,9 @@ FString UGradeSystem::PlayerGrade(int seconds, FString& endText)
 	{
 		tempText = "1 STAR";
 	}
-	else if (tempSeconds < gradeRanges[3])
-	{
-		tempText = "0 STAR";
-	}
 	else
 	{
-		tempText = "Invalid Score";
+		tempText = "0 STAR";
 	}
 
 	return tempText;

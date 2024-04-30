@@ -28,5 +28,5 @@ public:
 		FString PlayerGrade(int seconds, FString& endText);
 
 	UPROPERTY(EditAnywhere, Category = "WinClass")
-		float gradeRanges[4];
+		float gradeRanges[3];
 };
