@@ -7,12 +7,12 @@ void UGameInstanceSave::CallLevelData(int levelNumber, int& levelRetries, int& l
 {
 	levelRetries = levelSaveRetries[levelNumber];
 	levelSeconds = levelSaveSeconds[levelNumber];
-	levelStars = levelSaveSeconds[levelNumber];
+	levelStars = levelSaveStars[levelNumber];
 }
 
 void UGameInstanceSave::SaveLevelData(int levelNumber, int levelRetries, int levelSeconds, int levelStars)
 {
 	levelSaveRetries[levelNumber] = levelRetries;
 	levelSaveSeconds[levelNumber] = levelSeconds;
-	levelSaveSeconds[levelNumber] = levelStars;
+	levelSaveStars[levelNumber] = levelStars;
 }
