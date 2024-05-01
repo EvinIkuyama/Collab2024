@@ -3,14 +3,14 @@
 
 #include "GameInstanceSave.h"
 
-void UGameInstanceSave::CallLevelData(int levelNumber, int& levelRetries, int& levelSeconds, int& levelStars)
+void UGameInstanceSave::CallLevelData(int levelNumber, int& levelRetries, float& levelSeconds, int& levelStars)
 {
 	levelRetries = levelSaveRetries[levelNumber];
 	levelSeconds = levelSaveSeconds[levelNumber];
 	levelStars = levelSaveStars[levelNumber];
 }
 
-void UGameInstanceSave::SaveLevelData(int levelNumber, int levelRetries, int levelSeconds, int levelStars)
+void UGameInstanceSave::SaveLevelData(int levelNumber, int levelRetries, float levelSeconds, int levelStars)
 {
 	levelSaveRetries[levelNumber] = levelRetries;
 	levelSaveSeconds[levelNumber] = levelSeconds;

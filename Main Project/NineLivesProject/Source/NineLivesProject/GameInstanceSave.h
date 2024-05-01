@@ -18,14 +18,14 @@ class NINELIVESPROJECT_API UGameInstanceSave : public UGameInstance
 		int levelSaveRetries[NumOfLevels];
 
 	UPROPERTY(EditAnywhere, Category = "TimeSave")
-		int levelSaveSeconds[NumOfLevels];
+		float levelSaveSeconds[NumOfLevels];
 
 	UPROPERTY(EditAnywhere, Category = "TimeSave")
 		int levelSaveStars[NumOfLevels];
 
 	UFUNCTION(BlueprintCallable, Category = "TimeSave")
-		void CallLevelData(int levelNumber, int& levelRetries, int& levelSeconds, int& levelStars);
+		void CallLevelData(int levelNumber, int& levelRetries, float& levelSeconds, int& levelStars);
 
 	UFUNCTION(BlueprintCallable, Category = "TimeSave")
-		void SaveLevelData(int levelNumber, int levelRetries, int levelSeconds, int levelStars);
+		void SaveLevelData(int levelNumber, int levelRetries, float levelSeconds, int levelStars);
 };
