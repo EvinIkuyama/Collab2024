@@ -15,7 +15,6 @@ enum class Enum_ActiveElement : uint8
 	Wind,
 	Water,
 	Earth,
-	Null,
 };
 
 UCLASS()
