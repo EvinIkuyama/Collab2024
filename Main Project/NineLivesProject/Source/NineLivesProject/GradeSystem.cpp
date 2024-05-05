@@ -56,3 +56,10 @@ int UGradeSystem::PlayerGrade(int seconds)
 
 	return index;
 }
+
+void UGradeSystem::UpdateGradeRanges(float star3Range, float star2Range, float star1Range)
+{
+	gradeRanges[0] = star3Range;
+	gradeRanges[1] = star2Range;
+	gradeRanges[2] = star1Range;
+}
