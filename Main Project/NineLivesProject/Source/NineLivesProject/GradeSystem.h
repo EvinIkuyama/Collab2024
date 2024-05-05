@@ -27,6 +27,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "WinClass")
 		int PlayerGrade(int seconds);
 
+	UFUNCTION(BlueprintCallable, Category = "WinClass")
+		void UpdateGradeRanges(float star3Range, float star2Range, float star1Range);
+
 	UPROPERTY(EditAnywhere, Category = "WinClass")
 		float gradeRanges[3];
 
