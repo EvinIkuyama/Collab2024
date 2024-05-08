@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#define NumOfLevels 3
+#define NumOfLevels 4
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
 #include "GameInstanceSave.generated.h"
