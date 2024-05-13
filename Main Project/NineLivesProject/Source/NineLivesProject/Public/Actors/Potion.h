@@ -14,7 +14,6 @@ enum class Enum_ActiveElement : uint8
 	Fire,
 	Wind,
 	Water,
-	Earth,
 	Null,
 };
 
