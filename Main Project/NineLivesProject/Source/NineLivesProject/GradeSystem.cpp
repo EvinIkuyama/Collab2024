@@ -63,3 +63,20 @@ void UGradeSystem::UpdateGradeRanges(float star3Range, float star2Range, float s
 	gradeRanges[1] = star2Range;
 	gradeRanges[2] = star1Range;
 }
+
+float UGradeSystem::FastestTimeCheck(float currentFastTime, float levelTime)
+{
+	if (levelTime < currentFastTime)
+	{
+		return levelTime;
+	}
+	else if (currentFastTime == 0.0f)
+	{
+		return levelTime;
+	}
+	else
+	{
+		return currentFastTime;
+	}
+
+}
