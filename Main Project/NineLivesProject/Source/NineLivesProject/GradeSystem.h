@@ -30,6 +30,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "WinClass")
 		void UpdateGradeRanges(float star3Range, float star2Range, float star1Range);
 
+	UFUNCTION(BlueprintCallable, Category = "WinClass")
+		float FastestTimeCheck(float currentFastTime, float levelTime);
+
 	UPROPERTY(EditAnywhere, Category = "WinClass")
 		float gradeRanges[3];
 
